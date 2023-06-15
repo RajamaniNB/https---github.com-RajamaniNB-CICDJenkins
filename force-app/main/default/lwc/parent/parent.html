@@ -1,0 +1,14 @@
+<template>
+<lightning-card>
+ <h3 slot="tilel">
+  <lightning-icon icon-name="utility:connected_apps" size="medium"></lightning-icon>
+  Parent
+  </h3>
+ <div class="slds-m-top_small slds-m-bottom_medium">
+ <lightning-button variant="brand" label="Brand" title="Send to child" onclick={sendData} class="slds-m-left_x-small"></lightning-button>
+     </div>
+  </lightning-card>
+    <lightning-card>
+  <c-child> </c-child>
+  </lightning-card>
+</template>
